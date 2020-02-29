@@ -1,5 +1,5 @@
 {
-  "name": "lib-jsonrpc-dev",
+  "name": "node_mailer_dev",
   "workspaceFolder": "/workspace",
   "dockerComposeFile": "./docker-compose.yml",
   "shutdownAction": "stopCompose",
