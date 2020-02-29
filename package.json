@@ -1,0 +1,23 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "Nodejs email formatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpaL2/node-mail.git"
+  },
+  "keywords": [
+    "email",
+    "RFC5322"
+  ],
+  "author": "Oskari Palojärvi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpaL2/node-mail/issues"
+  },
+  "homepage": "https://github.com/OpaL2/node-mail#readme"
+}
