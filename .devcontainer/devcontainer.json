@@ -1,0 +1,11 @@
+{
+  "name": "lib-jsonrpc-dev",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": "./docker-compose.yml",
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "post-create.sh",
+  "service": "dev",
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ]
+}

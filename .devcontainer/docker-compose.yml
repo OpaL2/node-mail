@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  dev:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        USERNAME: ${USER}
+        GROUPNAME: ${USER}
+        UID: 1000
+        GID: 1000
+    volumes:
+      # mount workspace
+      - ..:/workspace
+      # Mount gitconfig, so git works more nicer
+      - ${HOME}/.gitconfig:/server/.gitconfig
+      # Mount ssh config, so access to git remote works more seamless
+      - ${HOME}/.ssh:/server/.ssh
+      # Mount vscode server cache
+      - vscode-server:/server/.vscode-server
+      # Mount node-modules cache
+      - node-modules:/workspace/node_modules
+    # override default command
+    command: sleep infinity
+    networks:
+      - test
+
+volumes:
+  # vscode remote cache
+  vscode-server:
+  # node modules cache
+  node-modules:
+
+networks:
+  test:
